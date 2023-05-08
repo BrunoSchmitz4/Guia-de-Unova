@@ -5,6 +5,10 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
+  },
+  {
+    path: 'striaton',
+    loadChildren: () => import('./cities/striaton/striaton.module').then( m => m.StriatonPageModule)
   }
 ];
 @NgModule({

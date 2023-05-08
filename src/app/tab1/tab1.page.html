@@ -1,17 +1,58 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
+  <ion-toolbar color="dark">
+    <ion-title class="ion-text-center">
+      Pokémon Black & White
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-card>
+    <ion-card-header>
+      <ion-img src="assets/images/bw1.jpg" alt="Imagem de espirito santo"></ion-img>
+      <ion-card-title class="ion-text-center">A Quinta Geração Pokémon!</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content class="ion-text-justify">
+      Bem vindos à região de Unova, aqui humanos e pokémons vivem em harmonia de inúmeras maneiras e em inúmeros lugares. Conheça cidades simples a cidade de Driftveil, cidades animadas como Accumula, e a famosa cidade de Castelia! lugar dos deliciosos castelia-cones! Aproveite também para conhecer os poderosos pokémons iniciais: Oshawott, Tepig e Snivy, além de poder conhecer melhor os pokémons lendários da região, Reshiram e Zekrom.
+    </ion-card-content>
+  </ion-card>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Conheça melhor a região:</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+
+        <ion-item href="https://www.nintendoblast.com.br/2011/02/pokemon-blast-conheca-unova-regiao-que.html#:~:text=Unova%20%C3%A9%20a%20%C3%BAnica%20regi%C3%A3o,chegar%20ao%20nome%20em%20ingl%C3%AAs." class="ion-activated" target="_blank">
+          <ion-thumbnail slot="start">
+            <img alt="Insígnias da Região" src="https://media.indiedb.com/images/games/1/64/63379/Unova_Logo05x.png" />
+          </ion-thumbnail>
+          <ion-label>História de Unova</ion-label>
+        </ion-item>
+  
+        <ion-item href="https://www.nintendoblast.com.br/2011/02/pokemon-blast-conheca-unova-regiao-que.html#:~:text=Unova%20%C3%A9%20a%20%C3%BAnica%20regi%C3%A3o,chegar%20ao%20nome%20em%20ingl%C3%AAs." class="ion-activated" target="_blank">
+          <ion-thumbnail slot="start">
+            <img alt="Pokédex da Região" src="https://cdn11.bigcommerce.com/s-0kvv9/images/stencil/1280x1280/products/216634/303492/blackwhitepokedex-inset2__92192.1519953400.jpg" />
+          </ion-thumbnail>
+          <ion-label>Pokédex de Unova</ion-label>
+        </ion-item>
+  
+        <ion-item href="https://www.nintendoblast.com.br/2011/02/pokemon-blast-conheca-unova-regiao-que.html#:~:text=Unova%20%C3%A9%20a%20%C3%BAnica%20regi%C3%A3o,chegar%20ao%20nome%20em%20ingl%C3%AAs." class="ion-activated" target="_blank">
+          <ion-thumbnail slot="start">
+            <img alt="Líderes de ginásio da região" src="https://1.bp.blogspot.com/-8WNJjyrhnyk/Xaz7cIxyVcI/AAAAAAAAB_M/RQb1GnmDCF8aOYSHMQLIQnNpn8LftupWgCLcBGAsYHQ/s1600/capa.png" />
+          </ion-thumbnail>
+          <ion-label>Líderes de Ginásio</ion-label>
+        </ion-item>
+  
+        <ion-item href="https://www.nintendoblast.com.br/2011/02/pokemon-blast-conheca-unova-regiao-que.html#:~:text=Unova%20%C3%A9%20a%20%C3%BAnica%20regi%C3%A3o,chegar%20ao%20nome%20em%20ingl%C3%AAs." class="ion-activated" target="_blank">
+          <ion-thumbnail slot="start">
+            <img alt="elite 4 da região" src="https://i1.sndcdn.com/artworks-79Kvd0ohwaj0oTwJ-D6mrkg-t500x500.jpg" />
+          </ion-thumbnail>
+          <ion-label>A Elite 4</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

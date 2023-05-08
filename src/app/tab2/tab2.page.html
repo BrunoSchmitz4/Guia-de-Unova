@@ -1,17 +1,57 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="danger">
     <ion-title>
-      Tab 2
+      Os Pokémons de Unova
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-list>
+    <ion-item-sliding *ngFor="let pokemon of pokemon_ObjList">
+      <ion-item>
+        <ion-thumbnail slot="start"><img [src]="pokemon.image" alt="imagem do item"></ion-thumbnail>
+        <ion-label>
+          <ion-text color="success">
+            <h2>{{pokemon.nome}}</h2>
+          </ion-text>
+          <p>Tipo: {{pokemon.tipo}}</p>
+          </ion-label>
+          <ion-note slot="end">{{pokemon.capturado}}</ion-note>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option (click)="openSite()" color="danger">
+          <ion-icon slot="icon-only" name="information-circle-outline"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+      <ion-item-options side="start">
+        <ion-item-option (click)="like()">
+          <ion-icon name="heart-outline"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+    <!-- <ion-item-sliding>
+      <ion-item>
+        <ion-thumbnail slot="start"><img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/495.png" alt="imagem do item"></ion-thumbnail>
+        <ion-label>
+          <ion-text color="success">
+            <h2>Snivy</h2>
+          </ion-text>
+          <p>Tipo Grama</p>
+          </ion-label>
+          <ion-note slot="end">Pokémon Inicial</ion-note>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option (click)="openSite()" color="danger">
+          <ion-icon slot="icon-only" name="information-circle-outline"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+      <ion-item-options side="start">
+        <ion-item-option (click)="like()">
+          <ion-icon name="heart-outline"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding> -->
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  </ion-list>
 </ion-content>

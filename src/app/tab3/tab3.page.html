@@ -1,17 +1,48 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 3
+  <ion-toolbar color="success">
+    <ion-title class="tab-title">
+      A Região de Unova
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <ion-list>
+    <ion-item [routerLink]="['/striaton']">
+      <ion-thumbnail slot="start">
+        <img src="https://2.bp.blogspot.com/-wCk0dWzoHps/U-EPzpaKABI/AAAAAAAAB1M/qJG96hDUopY/s1600/Striaton_City_anime.png" alt="Cidade de Striaton">
+      </ion-thumbnail>
+      <ion-label>
+        <ion-text color="tertiary">
+          <h2>Cidade de Striaton</h2>
+        </ion-text>
+        <ion-badge color="secondary" slot="end">Jardim dos Sonhos</ion-badge>
+      </ion-label>
+      <ion-icon name="chevron-forward-outline" slot="end"></ion-icon>
+    </ion-item>
+    <ion-item [routerLink]="['/striaton']">
+      <ion-thumbnail slot="start">
+        <img src="https://2.bp.blogspot.com/-wCk0dWzoHps/U-EPzpaKABI/AAAAAAAAB1M/qJG96hDUopY/s1600/Striaton_City_anime.png" alt="Cidade de Striaton">
+      </ion-thumbnail>
+      <ion-label>
+        <ion-text color="tertiary">
+          <h2>Cidade de Striaton</h2>
+        </ion-text>
+        <ion-badge color="secondary" slot="end">Jardim dos Sonhos</ion-badge>
+      </ion-label>
+      <ion-icon name="chevron-forward-outline" slot="end"></ion-icon>
+    </ion-item>
+    <ion-item [routerLink]="['/striaton']">
+      <ion-thumbnail slot="start">
+        <img src="https://2.bp.blogspot.com/-wCk0dWzoHps/U-EPzpaKABI/AAAAAAAAB1M/qJG96hDUopY/s1600/Striaton_City_anime.png" alt="Cidade de Striaton">
+      </ion-thumbnail>
+      <ion-label>
+        <ion-text color="tertiary">
+          <h2>Cidade de Striaton</h2>
+        </ion-text>
+        <ion-badge color="secondary" slot="end">Jardim dos Sonhos</ion-badge>
+      </ion-label>
+      <ion-icon name="chevron-forward-outline" slot="end"></ion-icon>
+    </ion-item>
+  </ion-list>
 </ion-content>
